@@ -1,0 +1,121 @@
+/* Estilos globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+
+.principal {
+    background-color: rgba(41, 41, 41, 0.5);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.icon {
+    display: flex;
+}
+
+.iconText {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+.desktopLinks {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.links a {
+    font-size: 19px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.links a:hover {
+    color: aqua;
+}
+
+.links h2 {
+    color: aliceblue;
+}
+
+
+/* Estilos para ícone do menu e links móveis */
+
+.menuIcon {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .desktopLinks {
+        display: none;
+    }
+    .menuIcon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        position: fixed;
+        right: 20px;
+        top: 12.5px;
+        z-index: 1001;
+        background-color: rgba(41, 41, 41, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.mobileLinks {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background-color: rgba(41, 41, 41, 0.5);
+    width: 100%;
+    padding: 0px 0;
+    transition: max-height 1s ease-out;
+    overflow: hidden;
+    z-index: 999;
+    max-height: 0;
+}
+
+.mobileLinks.show {
+    max-height: 500px;
+}
+
+.mobileLinks a {
+    font-size: 19px;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    text-align: left;
+    margin-left: 3vh;
+}
+
+.mobileLinks a:hover {
+    color: aqua;
+}

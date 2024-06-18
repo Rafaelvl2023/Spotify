@@ -1,0 +1,82 @@
+.footer {
+    background: linear-gradient(to bottom, rgb(7, 12, 17), rgb(34, 40, 49));
+    margin-top: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape h1 {
+    color: aliceblue;
+}
+
+.titleFooter {
+    color: aliceblue;
+    margin-left: 6px;
+}
+
+
+/* Links */
+
+.titleLink {
+    opacity: 0.7;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.navBar a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    color: rgb(0, 122, 230);
+}
+
+.redesSociais {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media(max-width: 900px) {
+    .footer {
+        margin-top: -5px;
+    }
+    .navBar {
+        padding-top: 20px;
+        padding-left: 41vw;
+    }
+    .redesSociais {
+        padding-top: 30px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 700px) {
+    .navBar {
+        padding-top: 20px;
+        padding-left: 39vw;
+    }
+    .redesSociais {
+        padding-top: 30px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .footer {
+        margin-top: -5px;
+    }
+    .navBar {
+        padding-top: 20px;
+        padding-left: 35vw;
+    }
+    .redesSociais {
+        padding-top: 30px;
+        justify-content: center;
+    }
+}

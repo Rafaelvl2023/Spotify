@@ -1,0 +1,157 @@
+.box3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemPublicaRecursos {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+}
+
+.imagemFundoRecursos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+
+/* Position Absolution */
+
+.positionClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -85px;
+    width: 100%;
+    height: 80%;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+
+/* Textos */
+
+.TitleRecursos h1 {
+    font-size: 43px;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #D3D3D3 25%, #FFFFFF 50%, #D3D3D3 75%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 0.1px #FFFFFF;
+    text-stroke: 1px #FFFFFF;
+}
+
+.textRecursos h2 {
+    font-size: 30px;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #D3D3D3 25%, #FFFFFF 50%, #D3D3D3 75%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.textRecursos h4 {
+    font-size: 15px;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #D3D3D3 25%, #FFFFFF 50%, #D3D3D3 75%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 0.09px #ADD8E6;
+}
+
+
+/* Imagens */
+
+.iphone {
+    display: flex;
+    justify-content: right;
+}
+
+.iphone img {
+    width: 260px;
+    transform: rotate(25deg);
+}
+
+@media (max-width: 1200px) {
+    .positionClass {
+        top: -17px;
+    }
+    .iphone img {
+        width: 200px;
+        transform: rotate(25deg);
+        margin-right: 50px;
+    }
+}
+
+@media(max-width: 900px) {
+    .box3 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagemPublicaRecursos {
+        height: 50vh;
+    }
+    .imagemFundoRecursos {
+        height: 50vh;
+    }
+    .positionClass {
+        top: 30px;
+    }
+    .textos {
+        padding-left: 30px;
+    }
+    .TitleRecursos h1 {
+        font-size: 43px;
+        margin-bottom: 30px;
+    }
+    .textRecursos h4 {
+        margin-bottom: 10px;
+    }
+    .iphone {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .imagemPublicaRecursos {
+        height: 50vh;
+    }
+    .imagemFundoRecursos {
+        height: 50vh;
+    }
+}
+
+@media(max-width: 500px) {
+    .positionClass {
+        top: 0px;
+    }
+    .imagemPublicaRecursos {
+        height: 50vh;
+    }
+    .imagemFundoRecursos {
+        height: 50vh;
+    }
+}
+
+@media(max-width: 400px) {
+    .imagemPublicaRecursos {
+        height: 135vw;
+    }
+    .imagemFundoRecursos {
+        height: 135vw;
+    }
+}

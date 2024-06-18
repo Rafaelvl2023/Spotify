@@ -1,0 +1,121 @@
+.section2 {
+    margin-bottom: 23px;
+}
+
+.fotos {
+    padding-top: 20px;
+}
+
+.imagem img {
+    width: 250px;
+    padding-top: 10px;
+}
+
+.TituloServicos {
+    font-size: 53px;
+    color: rgba(80, 15, 231, 0.8);
+    padding-top: 15px;
+}
+
+.servico1 h2 {
+    font-size: 30px;
+    color: rgba(80, 15, 231, 0.8);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.servico2 h2 {
+    font-size: 30px;
+    color: rgba(80, 15, 231, 0.8);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.servico3 h2 {
+    font-size: 30px;
+    color: rgba(80, 15, 231, 0.8);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.servico1 h4 {
+    font-size: 15px;
+    color: rgba(17, 17, 17, 0.8);
+    padding-bottom: 23px;
+}
+
+.servico2 h4 {
+    font-size: 15px;
+    color: rgba(17, 17, 17, 0.8);
+    padding-bottom: 23px;
+}
+
+.servico3 h4 {
+    font-size: 15px;
+    color: rgba(17, 17, 17, 0.8);
+    padding-bottom: 23px;
+}
+
+@media (max-width: 1200px) {
+    .imagem img {
+        width: 20vw;
+    }
+}
+
+@media(max-width: 900px) {
+    .imagem {
+        text-align: center;
+    }
+    .imagem img {
+        height: 400px;
+        width: 600px;
+    }
+    .servicos {
+        align-items: center;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+    .TituloServicos {
+        font-size: 43px;
+        color: rgba(80, 15, 231, 0.8);
+        padding-top: 15px;
+    }
+}
+
+@media(max-width: 650px) {
+    .imagem {
+        text-align: center;
+    }
+    .imagem img {
+        height: 330px;
+        width: 330px;
+    }
+    .servicos {
+        align-items: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .TituloServicos {
+        font-size: 30px;
+        color: rgba(80, 15, 231, 0.8);
+        padding-top: 15px;
+    }
+    .servico1 h2 {
+        font-size: 25px;
+        color: rgba(80, 15, 231, 0.8);
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .servico2 h2 {
+        font-size: 25px;
+        color: rgba(80, 15, 231, 0.8);
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .servico3 h2 {
+        font-size: 25px;
+        color: rgba(80, 15, 231, 0.8);
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}
